@@ -10,11 +10,11 @@ public:
     }
 
     TrieNode* get(char ch) {
-        return links[ch-'a'];
+        return links[ch - 'a'];
     }
 
     void put(char ch) {
-        links[ch-'a'] = new TrieNode();
+        links[ch - 'a'] = new TrieNode();
     }
 
     bool isEnd() {
