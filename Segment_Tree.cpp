@@ -20,7 +20,7 @@ struct SegTree {
     }
 
     void build(vector<int>& a, int x, int lx, int rx) {
-        if (rx-lx == 1) {
+        if (rx - lx == 1) {
             if (lx < (int)a.size()) {
                 arr[x] = single(a[lx]); 
             }
@@ -37,7 +37,7 @@ struct SegTree {
     }
 
     void set(int i, int v, int x, int lx, int rx) {
-        if (rx-lx == 1) {
+        if (rx - lx == 1) {
             arr[x] = single(v);
             return;
         }
